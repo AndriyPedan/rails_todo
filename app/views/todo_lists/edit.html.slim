@@ -1,0 +1,6 @@
+.container
+  h1 = @todo_list.title
+  = bootstrap_form_for(@todo_list) do |f|
+    = f.text_field :title, placeholder: "Title"
+    = f.text_field :description, placeholder: "Description"
+    = f.submit

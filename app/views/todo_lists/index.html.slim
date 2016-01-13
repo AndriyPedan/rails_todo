@@ -1,0 +1,12 @@
+.container
+  - if current_user
+    .text-center
+      h1.text-center TODO lists
+      - @todo_lists.each do |tl|
+        - if tl.user_id == current_user.id
+          a.btn.btn-default.box-cont href=todo_list_path(tl.id) role="button" =tl.title
+      br
+      a.btn.btn-default.box-cont.lead href=new_todo_list_path role="button" Create new todo list
+  - else
+    h1.text-center Welcome to Rails TODO application!
+    p.text-justify.lead This application offers create lists of TODO's. You can register in application and create(edit, destroy) in your profile the lists of tasks and add the TODO's to the list. After that you can mark TODO's as comleted. Completed TODO's can be removed.

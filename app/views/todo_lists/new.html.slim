@@ -1,0 +1,6 @@
+.container
+  h1.text-center New TODO list
+  = bootstrap_form_for(@todo_list) do |f|
+    = f.text_field :title, placeholder: "Title"
+    = f.text_area :description, placeholder: "Description"
+    = f.submit

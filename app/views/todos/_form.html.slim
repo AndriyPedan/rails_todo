@@ -1,0 +1,4 @@
+.todoform
+  = form_for([@todo_list, @todo_list.todos.build], remote: true) do |f|
+    = f.text_field :task, placeholder: "Text of your task"
+    = f.submit "+"

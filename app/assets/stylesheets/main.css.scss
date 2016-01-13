@@ -1,0 +1,52 @@
+body {
+  height: 100%;
+  background: -webkit-linear-gradient(0deg, #A9A9A9 15%, #FFFFFF 100%);
+  background:    -moz-linear-gradient(0deg, #A9A9A9 15%, #FFFFFF 100%);
+  background:     -ms-linear-gradient(0deg, #A9A9A9 15%, #FFFFFF 100%);
+  background:      -o-linear-gradient(0deg, #A9A9A9 15%, #FFFFFF 100%);
+  font-family: 'Lato', sans-serif;
+}
+
+p{
+    text-indent: 2em;
+}
+
+.box-cont {
+  width: 50%;
+  background: rgba(250, 250, 250, .3);
+  margin: .5em auto 0 auto;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 0 4px 3px rgba(0, 0, 0, .3);
+  box-shadow: 0 0 4px 4px rgba(0, 0, 0, .03);
+  padding: .85em 0;
+}
+.gray, .gray a {
+  color: #808080;
+}
+
+.header {
+  font-size: xx-large;
+  text-align: center;
+}
+
+.comleted{
+  opacity: 0.4;
+  text-decoration: line-through;
+  text-align: center;
+  font-size: large;
+}
+
+.uncompleted {
+  text-align: center;
+  font-size: large;
+}
+
+.todoform {
+  margin: .5em auto 0 auto;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.inpt {
+  width: 500px;
+}
