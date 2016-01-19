@@ -1,8 +1,8 @@
 .container
   .header
     = @todo_list.title
-    = link_to "<span class=\"glyphicon glyphicon-edit gray\"></span>".html_safe, edit_todo_list_path
-    = link_to "<span class=\"glyphicon glyphicon-trash gray\"></span>".html_safe, todo_list_path, method: :delete, data: {confirm: "Are you shure?"}
+    = link_to "<span class=\"glyphicon glyphicon-edit gray\"></span>".html_safe, edit_todo_list_path, remote: true
+    = link_to "<span class=\"glyphicon glyphicon-trash gray\"></span>".html_safe, todo_list_path, remote: true, method: :delete, data: {confirm: "Are you shure?"}
   p = @todo_list.description
   p = "Created by #{User.find(@todo_list.user_id).email}"
   #todosp= render @todo_list.todos

@@ -9,12 +9,12 @@ class TodosController < ApplicationController
 
   def destroy
     @todo.destroy
-    redirect_to @todo_list
+    redirect_via_turbolinks_to @todo_list
   end
 
   def complete
     @todo.update_attribute(:completed_at, Time.now)
-    redirect_to @todo_list
+    redirect_via_turbolinks_to @todo_list
   end
 
   private

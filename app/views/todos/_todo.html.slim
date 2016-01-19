@@ -6,4 +6,4 @@
   - else
     .uncompleted
       = todo.task
-      = link_to "<span class=\"glyphicon glyphicon-ok gray\"></span>".html_safe, complete_todo_list_todo_path(@todo_list, todo.id), method: :patch
+      = link_to "<span class=\"glyphicon glyphicon-ok gray\"></span>".html_safe, complete_todo_list_todo_path(@todo_list, todo.id),remote:true, method: :patch
